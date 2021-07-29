@@ -1,0 +1,104 @@
+/* CSS Geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #323232;
+    border: none;
+}
+
+label{
+    display: block;
+    width: 100%;
+}
+
+body{
+    padding-top: 5%;
+    background-color: #323232;
+    float: center;
+}
+
+#main-container img{
+    height: 150px;
+    width: 450px; 
+    border-radius: 10px 10px 0px 0px;
+}
+
+#main-container{
+    background-color: #FFF;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 1px 0px 20px 5px rgb(54, 54, 54);
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+textarea{
+    color: #868080;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    font-size: 15px;
+    height: 150px;
+    width: 350px; 
+    font-family: Helvetica, sans-serif;
+    border: none;
+    resize: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+textarea:focus{
+    outline: none;
+}
+.box{
+    background-color: #008B8B;
+    border-radius: 10px;
+    height: 200px;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1{
+    font-weight: bold;
+    color: #fff;
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    font-size: 20px;
+    padding-top: 5%;
+    padding-left: 5%;
+    margin-bottom: 10%;
+}
+p{
+    color: #fff;
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    position: relative;
+    font-size: 14px;
+    margin-left: 5%;
+}
+
+button{
+    background-image: url(../img/imgSac.png);
+    
+    border-radius: 35px 0px 0px 10px;
+    height: 80px;
+    width: 66px;
+    display: flex;
+    margin-right: 0;
+    float: right;
+    position: relative;
+    justify-content: baseline;
+    align-items: center;
+}
+button p{
+    font-weight: bold;
+    width: 66px;
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    color: #868080;
+}
