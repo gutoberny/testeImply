@@ -1,13 +1,11 @@
-
 function validaCPF() {
     let cpf = document.getElementById("CPF").value;
     
-    
-    if (typeof cpf != "string") 
+    if (typeof cpf != "string")     
         return false
     cpf = cpf.replace(/[\s.-]*/igm, '')
     if (cpf.length != 11 || !Array.from(cpf).filter(e => e != cpf[0]).length) {
-        
+        alert("CPF inválido.")
         return false
     }
     var soma = 0
@@ -19,7 +17,7 @@ function validaCPF() {
     if ((resto == 10) || (resto == 11))  
         resto = 0
     if (resto != parseInt(cpf.substring(9, 10)) ){ 
-            
+        alert("CPF inválido.")
         return false
     }
     soma = 0
@@ -30,7 +28,7 @@ function validaCPF() {
       resto = 0
     if (resto != parseInt(cpf.substring(10, 11) ) )
     
-    return false
+    
     return true
     
 }
